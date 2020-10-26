@@ -1,14 +1,10 @@
 import tkinter
 import time
-import webbrowser
 
 def my_clock():
-    t = time.strftime("%X")
-    la1["text"] = t
+    la1["text"] = time.strftime("%X")
     la2["text"] = time.strftime("%Y/%m/%d")
     la3["text"] = time.strftime(" %A ")
-    if(t == en1.get()):
-        webbrowser.open(en2.get())
     root.after(1000,my_clock)
 
 root = tkinter.Tk()
@@ -23,14 +19,8 @@ la2 =tkinter.Label(fr,bg="black",fg="gold")
 la2["font"] = ("Times New Roman",20)
 la2.place(x=20,y=10)
 la3 = tkinter.Label(fr,bg="black",fg="lime")
-la3["font"] = la2["font"]
+la3["font"] = ("Times New Roman",20)
 la3.place(x=180, y=10)
-en1 = tkinter.Entry(width=30)
-en1["font"] = ("Times New Roman",12)
-en1.place(x=20, y=130)
-en2 = tkinter.Entry(width=30)
-en2["font"] = en1["font"]
-en2.place(x=20, y=160)
 fr.pack()
 my_clock
 root.mainloop()

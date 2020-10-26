@@ -3,7 +3,7 @@ import time
 import webbrowser
 
 def my_clock():
-  t = time.strftime("%X")
+  t = time.strftime("%x")
   la1["text"] = t
   la2["text"] = time.strftime('%y/%m/%d')
   la3["text"] = time.strftime('%A')
