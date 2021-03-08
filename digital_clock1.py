@@ -27,7 +27,7 @@ fr = tkinter.Frame(width=290,height=60, bg="black")
 la2 = tkinter.Label(fr,bg="black",fg="gold")
 la2["font"] = ("Times New Roman",20)
 la2.place(x=20,y=10)
-la3 = tkinter.Label(fr,bg="black",fg="lime")
+la3 = tkinter.Label(fr,bg="black",fg="gold")
 la3["font"] = la2["font"]
 la3.place(x=180, y=10)
 en1 = tkinter.Entry(width=30)
